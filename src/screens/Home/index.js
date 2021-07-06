@@ -13,12 +13,25 @@ const Home = ({navigation}) => {
                 navigation={navigation}
             />
             <HotspotContainer style={styles.hContainer}>
-                <Hotspot />
-                <Hotspot />
-                <Hotspot />
-                <Hotspot />
-                <Hotspot />
-                <Hotspot />
+                <Hotspot 
+                    navigation={navigation}
+                />
+
+                <Hotspot 
+                    navigation={navigation}
+                />
+                <Hotspot 
+                    navigation={navigation}
+                />
+                <Hotspot 
+                    navigation={navigation}
+                />
+                <Hotspot 
+                    navigation={navigation}
+                />
+                <Hotspot 
+                    navigation={navigation}
+                />
             </HotspotContainer>
         </Container>
     )

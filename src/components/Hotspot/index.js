@@ -1,11 +1,12 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import colors from '../../assets/themes/colors'
+import { HOTSPOT } from '../../constants/routeName'
 
-const Hotspot = () => {
+const Hotspot = ({navigation}) => {
     return (
-        <View style={styles.container}>
+        <TouchableOpacity onPress={() => navigation.navigate(HOTSPOT)} style={styles.container}>
             <View>
                 <Text style={styles.title}>LAMDA HOTSPOT1</Text>
                 <Text style={styles.subTitle}>DOUALA</Text>
@@ -20,7 +21,7 @@ const Hotspot = () => {
                 </View>
                 <Ionicons name="chevron-forward-outline" size={20} color={colors.grey} />
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }
 
